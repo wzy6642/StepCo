@@ -27,7 +27,7 @@ data_loder = LoadData(dataset_path)
 data = data_loder.load_data_jsonl()
 questions, reasoning_paths, answers = data_loder.data_parse_gsm8k(data)
 data_loder.data_info()
-save_path = os.path.join(config.data_save_root_path, f'{dataset_name}_train.txt')     # 这里的最后一个1用来标识数据切片
+save_path = os.path.join(config.data_save_root_path, f'{dataset_name}_train.txt')     
 print(f'[info] synthetic data saved to {save_path}')
 
 
@@ -233,4 +233,5 @@ for index in tqdm(range(len(data)), desc=f'{dataset_name} {config.backend_LLM} d
         record['index'] = index
         with open(save_path, 'a', encoding='utf-8') as f:
             f.write(json.dumps(record, ensure_ascii=False) + '\n')
+
 
