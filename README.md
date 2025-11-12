@@ -32,3 +32,4 @@ CUDA_VISIBLE_DEVICES=0,1,2 python finetune_deberta_v3.py \
 --save_steps 500 \
 --gradient_accumulation_steps 10
 ```
+> Note: Before running the code, specify the paths for saving the model and loading the dataset.
