@@ -6,7 +6,7 @@ class Config:
     def __init__(self):
         self.dataset_name_list = ['SVAMP', 'SingleOp', 'SingleEq', 'MultiArith', 'MATH', 'GSM-ICM', 'GSM-IC2', 'GSM8K', 'AQuA', 'AddSub', 'ASDiv']
         # The root directory where datasets are stored
-        self.dataset_root_path = "/scratch365/zwu23/math_word_problem_baselines/datasets"
+        self.dataset_root_path = "xxx"
         # The prompt strategy used for the model
         self.prompt_strategy = "Stepwise-Correction"
 
@@ -28,3 +28,4 @@ class Config:
 
         self.threshold = 0.5
         self.max_iterations = 5
+
