@@ -43,3 +43,28 @@ Finally, you need to switch to the StepCo directory. Run the following command t
 CUDA_VISIBLE_DEVICES=2 python main.py --dataset_idx 0
 ```
 > Note: You need to specify the root directory where your test dataset is stored. For interacting with OpenAI's API, you must configure your API keys and any additional required settings.
+
+```
+@inproceedings{wu-etal-2025-stepco,
+    title = "Enhancing Mathematical Reasoning in {LLM}s by Stepwise Correction",
+    author = "Wu, Zhenyu  and
+      Zeng, Qingkai  and
+      Zhang, Zhihan  and
+      Tan, Zhaoxuan  and
+      Shen, Chao  and
+      Jiang, Meng",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1048/",
+    doi = "10.18653/v1/2025.acl-long.1048",
+    pages = "21602--21623",
+    ISBN = "979-8-89176-251-0",
+}
+```
