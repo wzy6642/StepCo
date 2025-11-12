@@ -1,5 +1,7 @@
 # StepCo
 
+We propose StepCo, a novel framework that uses an iterative verify-then-revise process to progressively identify and revise incorrect steps in LLM-generated reasoning paths.
+
 ## Steps to Run the Code
 ### 1. Constructing Process Supervision Dataset
 
