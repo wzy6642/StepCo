@@ -33,3 +33,11 @@ CUDA_VISIBLE_DEVICES=0,1,2 python finetune_deberta_v3.py \
 --gradient_accumulation_steps 10
 ```
 > Note: Before running the code, specify the paths for saving the model and loading the dataset.
+
+### 3. Solving Math Word Problems
+
+Finally, you need to switch to the StepCo directory. Run the following command to automatically solve the math word problem:
+```Python
+CUDA_VISIBLE_DEVICES=2 python main.py --dataset_idx 0
+```
+> Note: You need to specify the root directory where your test dataset is stored. For interacting with OpenAI's API, you must configure your API keys and any additional required settings.
