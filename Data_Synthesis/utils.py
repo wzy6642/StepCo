@@ -82,7 +82,6 @@ def check_answer_correct_gsm8k(gold, pred):
             pred = eval(pred)
         except Exception as e:
             pred = 0
-    # 考虑浮点数之间的近似
     if math.isclose(gold, pred, rel_tol=1e-5, abs_tol=1e-5):
         return True
     elif math.isclose(gold / 100, pred, rel_tol=1e-5, abs_tol=1e-5):
@@ -112,4 +111,5 @@ def answered_by_llama3_8b(pipeline, terminators, input, max_new_tokens, temperat
     )
     response = outputs[0]["generated_text"][len(prompt):]
     return response
+
 
